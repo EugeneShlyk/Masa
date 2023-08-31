@@ -5,11 +5,19 @@
   position: relative;
 }
 
+.hero__box-button-wrapper {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
 .hero__box-button {
   position: absolute;
   z-index: 2;
   top: 409px;
-  left: 100px;
+  left: 50px;
   height: fit-content;
   margin: 0;
   padding: 7px 14px 50px;
@@ -136,7 +144,7 @@
 .hero__slide-inner {
   min-height: 800px;
   margin: 0;
-  padding: 447px 0 60px 100px;
+  padding: 447px 0 60px;
   background: rgba($color-cerulean-blue, 0.2);
 
   @include vp-1199 {
@@ -151,8 +159,9 @@
 }
 
 .hero__slide-inner-box {
-  position: relative;
-  margin: 0;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 0;
 }
 
