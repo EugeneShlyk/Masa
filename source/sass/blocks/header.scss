@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  //background: transparent;
+  background: red;
+}
+
+.header__logo-link{
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  background: rgba($color-white, 1);
+  border-radius: 50%;
+}
+
+.header__logo-image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

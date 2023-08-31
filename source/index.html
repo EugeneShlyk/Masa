@@ -1,64 +1,321 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="сайт об обучении в Израиле">
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <!--  <header class="header">-->
+  <!--    <div class="header__inner">-->
+  <!--      <h1 class="visually-hidden">сайт MASA</h1>-->
+  <!--  -->
+  <!--      <a class="header__logo-link" href="#" aria-label="на главную страницу сайта">-->
+  <!--        <div class="header__logo-image-wrapper header__logo-image-wrapper&#45;&#45;closed-menu">-->
+  <!--          <svg-->
+  <!--            width="28"-->
+  <!--            height="28"-->
+  <!--            aria-hidden="true"-->
+  <!--          >-->
+  <!--            <use href="img/sprite.svg#logo-header"></use>-->
+  <!--          </svg>-->
+  <!--        </div>-->
+  <!--      </a>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <main>
+    <div class="hero">
+
+      <div class="hero__box-button"></div>
+
+      <div class="hero__slider swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="hero__slide hero__slide-3 swiper-slide">
+            <div class="hero__slide-inner">
+
+              <div class="hero__slide-first-block">
+                <p>Программы стажировок в&nbsp;крупнейших компаниях Израиля</p>
+              </div>
+
+              <div class="hero__slide-second-block">
+                <div class="hero__slide-second-block-header">
+                  <p>Получите незаменимый опыт работы в ведущих израильских компаниях и государственных
+                    организациях. </p>
+                </div>
+                <div class="hero__slide-second-block-footer-wrapper">
+                  <div class="hero__slide-second-block-footer"></div>
+                </div>
+              </div>
+
+            </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
+
+          <div class="hero__slide hero__slide-2 swiper-slide">
+            <div class="hero__slide-inner">
+
+              <div class="hero__slide-first-block">
+                <p>Волонтёрские программы &mdash;внесите свой вклад в&nbsp;общество</p>
+              </div>
+
+              <div class="hero__slide-second-block">
+                <div class="hero__slide-second-block-header">
+                  <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.</p>
+                </div>
+                <div class="hero__slide-second-block-footer-wrapper">
+                  <div class="hero__slide-second-block-footer"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="hero__slide hero__slide-1 swiper-slide">
+            <div class="hero__slide-inner">
+
+              <div class="hero__slide-first-block">
+                <p>Глобальный профессиональный опыт обучения за&nbsp;рубежом</p>
+              </div>
+
+              <div class="hero__slide-second-block">
+                <div class="hero__slide-second-block-header">
+                  <p>Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая
+                    настоящий израильский стиль жизни!</p>
+                </div>
+                <div class="hero__slide-second-block-footer-wrapper">
+                  <div class="hero__slide-second-block-footer"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+    <div class="about-us">
+      <div class="about-us__inner">
+        <div class="about-us__header">
+          <div class="about-us__header-first-part">
+            <h2>О&nbsp;проекте &laquo;Маса&raquo;</h2>
+
+            <p>&laquo;Маса&raquo;&nbsp;&mdash; совместный проект правительства Израиля и&nbsp;Еврейского агентства
+              Сохнут.</p>
+          </div>
+
+          <div class="about-us__header-second-part">
+            <h3>Наша цель</h3>
+
+            <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях
+              карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются Израиль и
+              еврейские общины во всем мире. Цель центра – наделить этих людей способностью инициировать значимые
+              изменения. </p>
+
+            <div class="about-us__button"></div>
+          </div>
+        </div>
+
+        <div class="features">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__item-subtitle">
+                <span>Более 250 программ</span>
+              </div>
+
+              <div class="features__item-content">
+                <p>учебных и&nbsp;рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-subtitle">
+                <span>Более 3000 участников</span>
+              </div>
+
+              <div class="features__item-content">
+                <p>уже успешно прошли программу от&nbsp;&laquo;Маса&raquo; и&nbsp;остались в&nbsp;Израиле</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-subtitle">
+                <span>от&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</span>
+              </div>
+
+              <div class="features__item-content">
+                <p>грант всем участникам для комфортного прохождения программы</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-subtitle">
+                <span>участники из&nbsp;60&nbsp;стран</span>
+              </div>
+
+              <div class="features__item-content">
+                <p>студенты со&nbsp;всего мира приезжают на&nbsp;программу &laquo;Маса&raquo;</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+    <section class="programs">
+      <div class="programs__inner">
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+        <h2>Программы</h2>
+
+        <div class="programs__button"></div>
+
+        <div class="programs__slider swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="programs-slide programs-slide-1 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Стажировки</span>
+                </div>
+
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs-slide programs-slide-2 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Волонтёрство</span>
+                </div>
+
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Помогайте другим и развивайте свои лидерские качества. </p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs-slide programs-slide-3 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Учёба</span>
+                </div>
+
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Получите образование и&nbsp;измените свое будущее.</p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs-slide programs-slide-1 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Стажировки</span>
+                </div>
+
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+  </footer>
+</div>
+
+<!-- Модалки -->
+<div class="modal modal--preload" data-modal="feedback">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <p class="modal__description">Обычная модалка</p>
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <svg width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <svg width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
 </html>

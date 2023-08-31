@@ -1,0 +1,151 @@
+.about-us {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.about-us__inner {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 118px 0 90px;
+
+  @include vp-1199 {
+    padding: 99px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 69px 0 66px;
+  }
+}
+
+.about-us__header {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 59px;
+  padding: 0;
+
+  @include vp-1199 {
+    grid-template-columns: auto;
+    gap: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 39px;
+  }
+}
+
+.about-us__header-first-part {
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__header-first-part h2 {
+  margin: 5px 0 30px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+
+  @include vp-1199 {
+    margin: 0 0 25px 0;
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.about-us__header-first-part p {
+  margin: 0;
+  padding: 0 40px 0 0;
+  color: $color-charcoal;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-right: 200px;
+  }
+
+  @include vp-767 {
+    padding-right: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.about-us__header-second-part {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__header-second-part h3 {
+  margin: 0 0 33px;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+
+  @include vp-1199 {
+    margin: 0 0 23px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.about-us__header-second-part p {
+  margin: 0 0 32px;
+  padding: 0 88px 0 0;
+  color: $color-charcoal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  @include vp-1199 {
+    line-height: 20px;
+    padding-right: 194px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.about-us__button {
+  width: 277px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  background: $color-cerulean-blue;
+
+  @include vp-767 {
+    width: 223px;
+    height: 44px;
+  }
+}

@@ -1,3 +1,5 @@
+import {initHeroSlider} from './modules/hero-slider.js';
+import {initProgramsSlider} from './modules/programs__slider.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
@@ -10,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initHeroSlider();
 
   // Modules
   // ---------------------------------
@@ -21,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initProgramsSlider();
   });
 });
 
