@@ -5,10 +5,14 @@ const slider = document.querySelector('.programs__slider');
 export const initProgramsSlider = () =>
   slider &&
   new Swiper('.programs__slider', {
-    // navigation: {
-    //   nextEl: '.tours__header-part-button--to-right',
-    //   prevEl: '.tours__header-part-button--to-left',
-    // },
+    navigation: {
+      nextEl: '.programs__button-right',
+      prevEl: '.programs__button-left',
+    },
+    scrollbar: {
+      el: '.programs__scroll',
+      draggable: true,
+    },
     // simulateTouch: false,
     breakpoints: {
       320: {

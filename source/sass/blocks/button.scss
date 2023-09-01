@@ -1,0 +1,39 @@
+.button {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke: #316DC2;
+  }
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    background: $color-default-white;
+  }
+
+  &:active:not(:disabled) {
+    svg {
+      stroke: rgba($color-cerulean-blue, 0.7);
+    }
+  }
+
+  &:disabled {
+    svg {
+      stroke: $color-mischka;
+    }
+  }
+}
+
+
+

@@ -7,7 +7,7 @@
 
 .hero__box-button-wrapper {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -17,7 +17,7 @@
   position: absolute;
   z-index: 2;
   top: 409px;
-  left: 50px;
+  left: 20px;
   height: fit-content;
   margin: 0;
   padding: 7px 14px 50px;
@@ -144,7 +144,7 @@
 .hero__slide-inner {
   min-height: 800px;
   margin: 0;
-  padding: 447px 0 60px;
+  padding: 447px 20px 60px;
   background: rgba($color-cerulean-blue, 0.2);
 
   @include vp-1199 {
@@ -278,7 +278,7 @@
   }
 }
 
-.hero__slide-second-block-footer-wrapper {
+.hero__slide-second-block-footer {
   margin: 0;
   padding: 0;
   position: relative;
@@ -292,7 +292,7 @@
   }
 }
 
-.hero__slide-second-block-footer-wrapper::before {
+.hero__slide-second-block-footer::before {
   @include vp-767 {
     content: "";
     position: absolute;
@@ -304,7 +304,7 @@
   }
 }
 
-.hero__slide-second-block-footer-wrapper::after {
+.hero__slide-second-block-footer::after {
   content: "";
   position: absolute;
   top: 11px;
@@ -312,22 +312,4 @@
   width: 10px;
   height: 10px;
   background: url("../../img/svg/second-radius-mobile.svg");
-}
-
-.hero__slide-second-block-footer {
-  width: 196px;
-  height: 55px;
-  margin: 11px 0 0;
-  padding: 0;
-  background: rgba($color-cerulean-blue, 1);
-
-  @include vp-1199 {
-    height: 57px;
-    margin: 0;
-  }
-
-  @include vp-767 {
-    height: 42px;
-    width: 152px;
-  }
 }

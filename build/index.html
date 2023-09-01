@@ -5,34 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="сайт об обучении в Израиле">
-  <title>ProjectName</title>
+  <title>Masa</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="wrapper">
-  <!--  <header class="header">-->
-  <!--    <div class="header__inner">-->
-  <!--      <h1 class="visually-hidden">сайт MASA</h1>-->
-  <!--  -->
-  <!--      <a class="header__logo-link" href="#" aria-label="на главную страницу сайта">-->
-  <!--        <div class="header__logo-image-wrapper header__logo-image-wrapper&#45;&#45;closed-menu">-->
-  <!--          <svg-->
-  <!--            width="28"-->
-  <!--            height="28"-->
-  <!--            aria-hidden="true"-->
-  <!--          >-->
-  <!--            <use href="img/sprite.svg#logo-header"></use>-->
-  <!--          </svg>-->
-  <!--        </div>-->
-  <!--      </a>-->
-  <!--    </div>-->
-  <!--  </header>-->
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="visually-hidden">сайт MASA</h1>
+
+        <a class="header__logo-link" href="#" aria-label="на главную страницу сайта">
+          <div class="header__logo-image-wrapper header__logo-image-wrapper--closed-menu">
+            <svg
+              width="28"
+              height="28"
+              aria-hidden="true"
+            >
+              <use href="img/sprite.svg#logo-header"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </header>
 
   <main>
     <div class="hero">
 
       <div class="hero__box-button-wrapper">
-        <div class="hero__box-button"></div>
+          <div class="hero__box-button"></div>
       </div>
 
       <div class="hero__slider swiper-container">
@@ -51,8 +51,7 @@
                     <p>Получите незаменимый опыт работы в ведущих израильских компаниях и государственных
                       организациях. </p>
                   </div>
-                  <div class="hero__slide-second-block-footer-wrapper">
-                    <div class="hero__slide-second-block-footer"></div>
+                  <div class="hero__slide-second-block-footer">
                   </div>
                 </div>
 
@@ -73,8 +72,7 @@
                   <div class="hero__slide-second-block-header">
                     <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.</p>
                   </div>
-                  <div class="hero__slide-second-block-footer-wrapper">
-                    <div class="hero__slide-second-block-footer"></div>
+                  <div class="hero__slide-second-block-footer">
                   </div>
                 </div>
 
@@ -95,8 +93,10 @@
                     <p>Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая
                       настоящий израильский стиль жизни!</p>
                   </div>
-                  <div class="hero__slide-second-block-footer-wrapper">
-                    <div class="hero__slide-second-block-footer"></div>
+                  <div class="hero__slide-second-block-footer">
+                    <a class="link" href="#">
+                      <span></span>
+                    </a>
                   </div>
                 </div>
 
@@ -175,12 +175,13 @@
       </div>
     </div>
 
+
     <section class="programs">
       <div class="programs__inner">
 
         <h2>Программы</h2>
 
-        <div class="programs__button"></div>
+        <div class="programs__link"></div>
 
         <div class="programs__slider swiper-container">
           <div class="swiper-wrapper">
@@ -281,12 +282,87 @@
               </div>
             </div>
 
+            <div class="programs-slide programs-slide-2 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Волонтёрство</span>
+                </div>
 
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Помогайте другим и развивайте свои лидерские качества. </p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs-slide programs-slide-3 swiper-slide">
+              <div class="programs-slide__inner">
+                <div class="programs-slide__inner-title">
+                  <span>Учёба</span>
+                </div>
+
+                <div class="programs-slide__inner-footer">
+                  <div class="programs-slide__inner-footer-text">
+                    <p>Получите образование и&nbsp;измените свое будущее.</p>
+                  </div>
+
+                  <a class="programs-slide__inner-footer-link" href="#" aria-label="на страницу оформления стажировки">
+                    <svg
+                      width="8"
+                      height="8"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="programs__control">
+          <div class="programs__scroll"></div>
+
+          <div class="programs__button-box">
+            <button class="programs__button-left button button--left">
+              <svg
+                width="10"
+                height="10"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#button-left"></use>
+              </svg>
+            </button>
+
+            <button class="programs__button-right button button--right">
+              <svg
+                width="10"
+                height="10"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#button-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
 
       </div>
     </section>
+
+
 
   </main>
   <footer>

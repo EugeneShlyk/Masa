@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding: 0;
   background: transparent;
+  z-index: 2;
 }
 
 .header__inner {
@@ -17,8 +18,7 @@
   width: 100%;
   margin: 0;
   padding: 0 20px;
-  //background: transparent;
-  background: red;
+  background: transparent;
 }
 
 .header__logo-link{
@@ -28,6 +28,19 @@
   padding: 0;
   background: rgba($color-white, 1);
   border-radius: 50%;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba($color-white, 0.7);
+  }
+
+  &:active {
+    background: rgba($color-white, 1);
+
+    svg {
+      fill: $color-endeavour;
+    }
+  }
 }
 
 .header__logo-image-wrapper {
@@ -36,4 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__logo-image-wrapper svg {
+  fill: $color-cerulean-blue;
 }
