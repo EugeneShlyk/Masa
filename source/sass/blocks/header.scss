@@ -57,6 +57,10 @@
   }
 }
 
+.header--navigation-opened .header__logo-link {
+  pointer-events: none;
+}
+
 .header--navigation-opened .header__logo-link::after {
   content: "";
   position: absolute;

@@ -27,10 +27,11 @@
   @include vp-1199 {
     row-gap: 40px;
     overflow: visible;
+    padding-bottom: 101px;
   }
 
   @include vp-767 {
-    padding: 32px 0 120px;
+    padding: 32px 0 67px;
     row-gap: 31px;
   }
 }
