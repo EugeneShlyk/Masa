@@ -52,9 +52,108 @@
 }
 
 .conditions__inner-second-box h3 {
-  margin: 4px 0 20px;
+  margin: 4px 0 55px;
   padding: 0;
   font-size: 32px;
   font-weight: 400;
   line-height: 36px;
+}
+
+.conditions__list {
+  display: grid;
+  gap: 23px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
+.conditions__list-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px 64px 22px 24px;
+  border-radius: 16px;
+  border: 1px solid $color-default-white;
+  position: relative;
+}
+
+.conditions__list-item--1::before {
+  content: "1";
+  position: absolute;
+  top: -16px;
+  left: -21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  background: $color-cerulean-blue;
+}
+
+.conditions__list-item--2::before {
+  content: "2";
+  position: absolute;
+  top: -16px;
+  left: -21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  background: $color-cerulean-blue;
+}
+
+.conditions__list-item--3::before {
+  content: "3";
+  position: absolute;
+  top: -16px;
+  left: -21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  background: $color-cerulean-blue;
+}
+
+.conditions__list-item--4::before {
+  content: "4";
+  position: absolute;
+  top: -16px;
+  left: -21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  background: $color-cerulean-blue;
+}
+
+.conditions__list-item span {
+  padding: 0;
+  margin: 0;
+  color: $color-alabaster;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
