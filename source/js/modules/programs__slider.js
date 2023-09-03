@@ -23,6 +23,14 @@ export const initProgramsSlider = () =>
         slidesPerView: 2,
         spaceBetween: 30,
       },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 3,
+      },
+      1222: {
+        slidesPerView: 3,
+        spaceBetween: 3,
+      },
       1240: {
         slidesPerView: 3,
         spaceBetween: 12,
@@ -31,10 +39,5 @@ export const initProgramsSlider = () =>
         slidesPerView: 3,
         spaceBetween: 32,
       },
-
-      // 1280: {
-      //   slidesPerView: 3,
-      //   spaceBetween: 32,
-      // },
     },
   });

@@ -1,4 +1,5 @@
 import {initHeroSlider} from './modules/hero-slider.js';
+import {toggleMenuHandler} from './modules/navigation.js';
 import {initProgramsSlider} from './modules/programs__slider.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initProgramsSlider();
+    toggleMenuHandler();
   });
 });
 
