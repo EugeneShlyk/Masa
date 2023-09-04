@@ -52,14 +52,17 @@
 
         </button>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list" data-accordion="parent">
           <li class="navigation-list__item">
             <a class="navigation-list__item-link" href="#">О&nbsp;проекте</a>
           </li>
 
-          <li class="navigation-list__item">
+
+
+          <li class="navigation-list__item" data-accordion="element">
             <button
               class="navigation-list__item-link navigation-list__item-link-submenu"
+              data-accordion="button"
               aria-label="открыть подменю"
             >Программы
               <svg
@@ -81,7 +84,7 @@
               </svg>
             </button>
 
-            <ul class="navigation-list__sublist">
+            <ul class="navigation-list__sublist" data-accordion="content">
 
               <li class="navigation-list__sublist-item">
                 <a class="navigation-list__sublist-item-link" href="#">Стажировки</a>
@@ -110,9 +113,10 @@
             <a class="navigation-list__item-link" href="#">отзывы</a>
           </li>
 
-          <li class="navigation-list__item">
+          <li class="navigation-list__item" data-accordion="element">
             <button
               class="navigation-list__item-link navigation-list__item-link-submenu"
+              data-accordion="button"
               aria-label="открыть подменю"
             >новости
               <svg
@@ -134,7 +138,7 @@
               </svg>
             </button>
 
-            <ul class="navigation-list__sublist">
+            <ul class="navigation-list__sublist" data-accordion="content">
 
               <li class="navigation-list__sublist-item">
                 <a class="navigation-list__sublist-item-link" href="#">Стажировки</a>
@@ -191,7 +195,7 @@
                   </div>
                   <div class="hero__slide-second-block-footer">
 
-                    <a class="hero__slide-second-block-footer-link primary-link" href="#">
+                    <a class="hero__slide-second-block-footer-link primary-link" data-open-modal="success" href="#">
                       подробнее
 
                       <span>

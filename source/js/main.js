@@ -5,6 +5,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './vendor/burger.js';
+import {initAccordions} from './vendor/init-accordion.js';
 
 // ---------------------------------
 
@@ -30,10 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleMenuHandler();
     const burger = new Burger();
     burger.init();
+    initAccordions();
   });
 });
-
-
 
 // ---------------------------------
 

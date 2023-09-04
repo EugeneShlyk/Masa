@@ -64,14 +64,9 @@
 }
 
 .navigation-list__sublist {
-  display: none;
   margin: 0;
-  padding: 8px 0 0 0;
+  padding: 0;
   list-style: none;
-}
-
-.navigation-list__sublist--opened {
-  display: block;
 }
 
 .navigation-list__sublist-item {
