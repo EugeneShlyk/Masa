@@ -4,6 +4,7 @@ import {initProgramsSlider} from './modules/programs__slider.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {Burger} from './vendor/burger.js';
 
 // ---------------------------------
 
@@ -27,8 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initProgramsSlider();
     toggleMenuHandler();
+    const burger = new Burger();
+    burger.init();
   });
 });
+
+
 
 // ---------------------------------
 

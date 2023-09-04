@@ -1264,7 +1264,7 @@ body {
   overflow: hidden;
 }
 
-.body-scroll-lock::after {
+.body-navigation-overlay::after {
   content: "";
   position: absolute;
   z-index: 2;
