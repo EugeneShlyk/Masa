@@ -737,13 +737,34 @@
             </label>
           </div>
 
-          <div class="modal__city-select modal__title-span">
-            <span>Выберите город</span>
-
-
+          <div
+            class="custom-select"
+            data-select
+            data-validate-type="select"
+            data-name="some-name"
+            data-id="id-example-1"
+          >
+<!--            <div class="select" data-select>-->
+              <!--            <span class="custom-select__label">label-1</span>-->
+              <!--            <span class="custom-select__error">some-error</span>-->
+              <!--            <span class="custom-select__placeholder">some-placeholder</span>-->
+              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                <span class="custom-select__text">город</span>
+                <span class="custom-select__icon"></span>
+              </button>
+              <ul class="custom-select__list">
+                <li class="custom-select__item" tabindex="0" data-select-value="id-1">example-1</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-2">example-2</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-3">example-3</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-4">example-4</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-5">example-5</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="id-6">example-6</li>
+              </ul>
+<!--            </div>-->
           </div>
 
-          <button class="modal__button" type="submit" aria-label="отправить заявку на обратную связь">Отправить
+
+          <button class="modal__button" type="submit" aria-label="отправить заявку для обратной связи">Отправить
           </button>
 
         </form>

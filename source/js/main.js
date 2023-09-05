@@ -6,6 +6,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './vendor/burger.js';
 import {initAccordions} from './vendor/init-accordion.js';
+import {CustomSelect} from './vendor/custom-select/custom-select.js';
 
 // ---------------------------------
 
@@ -32,6 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     burger.init();
     initAccordions();
+    const select = new CustomSelect();
+    select.init();
   });
 });
 
