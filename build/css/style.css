@@ -1567,7 +1567,7 @@ button,
   line-height: 36px;
 }
 .modal__inner p {
-  margin: 0 0 20px;
+  margin: 0 0 19px;
   padding: 0;
   font-size: 16px;
   font-style: normal;
@@ -1634,7 +1634,7 @@ button,
 }
 
 .modal__title-span span {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -1895,9 +1895,19 @@ button,
 
 .custom-select {
   position: relative;
-  width: 300px;
-  padding: 14px 0 28px;
-  margin: 0 0 44px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  padding: 1px 0 0;
+  margin: 0;
   /* &.is-valid {
     .custom-select__button {
       border: 2px solid $color-eucalyptus;
@@ -1936,21 +1946,20 @@ button,
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 48px;
-  padding: 5px 10px;
+  padding: 17px 18px;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 .custom-select__button:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #484848;
 }
 .custom-select__button:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 .custom-select__button:disabled {
   pointer-events: none;
@@ -1958,16 +1967,16 @@ button,
 }
 .custom-select__list {
   position: absolute;
-  bottom: 10px;
+  bottom: -4px;
   z-index: 1;
   width: 100%;
-  max-height: 100px;
   margin: 0;
   padding: 0;
   overflow-y: auto;
   list-style: none;
   background-color: #ffffff;
-  border: 2px solid #000000;
+  border: 1px solid #484848;
+  border-radius: 8px;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
@@ -1977,34 +1986,41 @@ button,
   transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 .custom-select__item {
-  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  padding: 17px 20px;
+  color: #484848;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
   outline: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .custom-select__item[aria-selected=true] {
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #316DC2;
 }
-@media (hover: hover) {
-  .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-.custom-select__item[aria-selected=true].focus-visible:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-@media (hover: hover) {
-  .custom-select__item:hover:not(.focus-visible) {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+.custom-select__item:hover:not([aria-selected=true]) {
+  color: #316DC2;
 }
 .custom-select__item.focus-visible:focus {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .custom-select__text {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 80%;
@@ -2022,8 +2038,8 @@ button,
 .custom-select__icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 20px;
-  height: 10px;
+  width: 15px;
+  height: 8px;
   margin-left: auto;
   background-color: #000000;
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -2107,6 +2123,14 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.custom-select > span {
+  margin: 0 0 7px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .hero {

@@ -240,7 +240,7 @@
                   </div>
                   <div class="hero__slide-second-block-footer">
 
-                    <a class="hero__slide-second-block-footer-link primary-link" href="#">
+                    <a class="hero__slide-second-block-footer-link primary-link" data-open-modal="modal" href="#">
                       подробнее
 
                       <span>
@@ -286,7 +286,7 @@
                   </div>
                   <div class="hero__slide-second-block-footer">
 
-                    <a class="hero__slide-second-block-footer-link primary-link" href="#">
+                    <a class="hero__slide-second-block-footer-link primary-link" data-open-modal="modal" href="#">
                       подробнее
 
                       <span>
@@ -744,34 +744,31 @@
             data-name="some-name"
             data-id="id-example-1"
           >
-<!--            <div class="select" data-select>-->
-              <!--            <span class="custom-select__label">label-1</span>-->
-              <!--            <span class="custom-select__error">some-error</span>-->
-              <!--            <span class="custom-select__placeholder">some-placeholder</span>-->
-              <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
-                <span class="custom-select__text">город</span>
-                <span class="custom-select__icon"></span>
-              </button>
-              <ul class="custom-select__list">
-                <li class="custom-select__item" tabindex="0" data-select-value="id-1">example-1</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-2">example-2</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-3">example-3</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-4">example-4</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-5">example-5</li>
-                <li class="custom-select__item" tabindex="0" data-select-value="id-6">example-6</li>
-              </ul>
-<!--            </div>-->
+
+            <span>Выберите город</span>
+
+            <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+              <span class="custom-select__text">город</span>
+              <span class="custom-select__icon"></span>
+            </button>
+            <ul class="custom-select__list">
+              <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-4">Санкт-Петербург</li>
+            </ul>
+            <!--            </div>-->
           </div>
 
 
-          <button class="modal__button" type="submit" aria-label="отправить заявку для обратной связи">Отправить
-          </button>
+<!--          <button class="modal__button" type="submit" aria-label="отправить заявку для обратной связи">Отправить-->
+<!--          </button>-->
 
         </form>
       </div>
 
 
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal disabled>
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
         <svg width="20" height="20" aria-hidden="true">
           <use xlink:href="img/sprite.svg#close-modal"></use>
         </svg>
