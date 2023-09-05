@@ -1492,7 +1492,7 @@ button,
           flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(13, 29, 51, 0.8);
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1541,15 +1541,38 @@ button,
 }
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
+  height: 611px;
+  padding: 53px 80px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: rgba(72, 72, 72, 0.8);
   background-color: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
-@media (max-width: 767px) {
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
+.modal .modal__inner {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+.modal__inner h2 {
+  margin: 0 0 7px;
+  padding: 0;
+  color: #316DC2;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.modal__inner p {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 .modal__close-btn {
   position: absolute;
@@ -1560,8 +1583,26 @@ button,
   height: 40px;
   padding: 0;
   background: rgba(255, 255, 255, 0);
+  stroke: #316DC2;
   border: none;
   cursor: pointer;
+}
+.modal__close-btn :hover:not(:disabled),
+.modal__close-btn :focus-visible:not(:disabled) {
+  stroke: rgba(49, 109, 194, 0.5);
+}
+.modal__close-btn :active:not(:disabled) {
+  stroke: #316DC2;
+}
+.modal__close-btn :disabled {
+  stroke: #A9AFB7;
+}
+@media (max-width: 767px) {
+  .modal__close-btn svg {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 .modal--responsive .modal__content {
   width: 100%;
@@ -1592,14 +1633,22 @@ button,
   pointer-events: auto;
 }
 
+.modal__title-span span {
+  margin: 0 0 7px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 100%;
+  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .custom-input,
@@ -1613,10 +1662,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   width: 100%;
+  margin: 0 0 16px;
 }
 @media screen and (max-width: 767px) {
   .custom-input label,
@@ -1637,12 +1691,10 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  border-radius: 8px;
   outline: none;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -1660,13 +1712,13 @@ button,
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 767px) {
   .custom-input__label,
@@ -1694,7 +1746,7 @@ button,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border: 1px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
@@ -1703,7 +1755,7 @@ button,
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border: 1px solid rgba(255, 21, 83, 0.5);
 }
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
@@ -1712,7 +1764,7 @@ button,
 .custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:focus,
 .custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+  border: 1px solid rgba(34, 178, 89, 0.5);
 }
 .custom-input .input-message,
 .custom-textarea .input-message {
@@ -3624,6 +3676,7 @@ button,
   height: 46px;
   background: #316DC2;
   border-radius: 50%;
+  pointer-events: none;
 }
 .navigation__button svg {
   stroke: #ffffff;
@@ -3736,10 +3789,10 @@ button,
   display: none;
 }
 
-.navigation-list__item-link-submenu-opened .navigation-list__item-link-icon:first-child {
+.is-active .navigation-list__item-link-icon:first-child {
   display: none;
 }
-.navigation-list__item-link-submenu-opened .navigation-list__item-link-icon:last-child {
+.is-active .navigation-list__item-link-icon:last-child {
   display: inline;
 }
 

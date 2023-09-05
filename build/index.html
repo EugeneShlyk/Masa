@@ -58,7 +58,6 @@
           </li>
 
 
-
           <li class="navigation-list__item" data-accordion="element">
             <button
               class="navigation-list__item-link navigation-list__item-link-submenu"
@@ -195,7 +194,7 @@
                   </div>
                   <div class="hero__slide-second-block-footer">
 
-                    <a class="hero__slide-second-block-footer-link primary-link" data-open-modal="success" href="#">
+                    <a class="hero__slide-second-block-footer-link primary-link" data-open-modal="modal" href="#">
                       подробнее
 
                       <span>
@@ -687,29 +686,73 @@
   </footer>
 </div>
 
-<!-- Модалки -->
-<div class="modal modal--preload" data-modal="feedback">
-  <div class="modal__wrapper">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__content">
-      <p class="modal__description">Обычная модалка</p>
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-        <svg width="15" height="15">
-          <use xlink:href="img/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
+<!-- Модалка -->
 
-<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="modal">
   <div class="modal__wrapper">
     <div class="modal__overlay" data-close-modal></div>
     <div class="modal__content">
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-        <svg width="15" height="15">
-          <use xlink:href="img/sprite.svg#icon-close"></use>
+
+      <div class="modal__inner" data-form-validate="data-form-validate" data-callback="base">
+        <h2>Напишите нам</h2>
+
+        <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
+
+        <form action="https://echo.htmlacademy.ru/." method="get" id="form">
+
+          <div
+            class="custom-input modal__title-span"
+            data-validate-type="text"
+            data-limitation="name"
+            data-required="data-required"
+          >
+
+            <label>
+              <span>Имя</span>
+
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                aria-label="поле ввода вашего имени"
+              >
+            </label>
+          </div>
+
+          <div
+            class="custom-input modal__title-span"
+            data-validate-type="phone"
+            data-on-input-validate="data-on-input-validate"
+            data-required="data-required"
+          >
+            <label>
+              <span>Телефон</span>
+
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                aria-label="поле ввода вашего телефона"
+              >
+            </label>
+          </div>
+
+          <div class="modal__city-select modal__title-span">
+            <span>Выберите город</span>
+
+
+          </div>
+
+          <button class="modal__button" type="submit" aria-label="отправить заявку на обратную связь">Отправить
+          </button>
+
+        </form>
+      </div>
+
+
+      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal disabled>
+        <svg width="20" height="20" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#close-modal"></use>
         </svg>
       </button>
     </div>

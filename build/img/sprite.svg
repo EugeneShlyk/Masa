@@ -6,6 +6,10 @@
 <path d="M11 5.6875H1M1 5.6875L5.96689 11M1 5.6875L5.96689 1"/>
 </symbol><symbol id="button-right" viewBox="0 0 11 12">
 <path d="M0 5.6875H10M10 5.6875L5.03311 11M10 5.6875L5.03311 1"/>
+</symbol><symbol id="close-modal-mobile" viewBox="0 0 14 14"><g fill="none">
+<path d="M1 13L7 7M7 7L13 1M7 7L13 13M7 7L1 1" stroke="#316DC2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="close-modal" viewBox="0 0 20 20">
+<path d="M1 19L10 10M10 10L19 1M10 10L19 19M10 10L1 1" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="closed-sublist-navigation" viewBox="0 0 12 12"><g fill="none">
   <path d="M11.454 3.81812L5.99947 8.72721L0.544922 3.81812"/>
 </g></symbol><symbol id="logo-header" viewBox="0 0 28 28">

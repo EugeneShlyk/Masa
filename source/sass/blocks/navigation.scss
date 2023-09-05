@@ -51,6 +51,7 @@
     height: 46px;
     background: $color-cerulean-blue;
     border-radius: 50%;
+    pointer-events: none;
   }
 
   svg {
