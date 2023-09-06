@@ -681,7 +681,21 @@
     </section>
 
     <section class="news">
-      <div class="news__inner"></div>
+      <div class="news__inner">
+
+        <h2>Новости и&nbsp;материалы</h2>
+
+        <div class="news__swiper-title"></div>
+
+        <div class="news__slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="news-slide news-slide--1 swiper-slide">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
   </main>
@@ -747,8 +761,10 @@
             class="custom-select"
             data-select
             data-validate-type="select"
+            data-on-input-validate="data-on-input-validate"
             data-name="some-name"
-            data-id="id-example-1"
+            data-id="select"
+            data-required
           >
 
             <span>Выберите город</span>
@@ -763,6 +779,7 @@
               <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
               <li class="custom-select__item" tabindex="0" data-select-value="id-4">Санкт-Петербург</li>
             </ul>
+
           </div>
 
           <div

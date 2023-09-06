@@ -8,6 +8,27 @@
 .news__inner {
   width: 100%;
   max-width: 1240px;
-  margin: 0;
-  padding: 132px 0 50px;
+  margin: 0 auto;
+  padding: 124px 0 50px;
+  text-align: center;
 }
+
+.news__inner h2 {
+  margin: 0 0 46px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.news__swiper-title {
+  height: 38px;
+  border: 1px solid #2c39f2;
+  margin-bottom: 40px;
+}
+
+.news__slider {
+  width: 100%;
+  overflow: hidden;
+}
+

@@ -206,10 +206,6 @@
 
   &.is-invalid {
 
-    //.custom-select__error {
-    //  opacity: 1;
-    //}
-
     .custom-select__button {
       border: 1px solid $color-wild-watermelon;
       background: rgba($color-wild-watermelon, 0.2);
@@ -220,17 +216,6 @@
       //}
     }
   }
-
-  /* &.is-valid {
-    .custom-select__button {
-      border: 2px solid $color-eucalyptus;
-
-      &:focus,
-      &:hover {
-        border: 2px solid rgba($color-eucalyptus, 0.5);
-      }
-    }
-  } */
 
   &--placeholder {
     .custom-select__label {
