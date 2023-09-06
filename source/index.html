@@ -423,7 +423,7 @@
 
           <span>
             <svg
-              class="hero__slide-second-block-footer-link-icon primary-link__icon"
+              class="programs__slide-second-block-footer-link-icon primary-link__icon"
               width="10"
               height="10"
               aria-hidden="true"
@@ -432,7 +432,7 @@
             </svg>
 
             <svg
-              class="hero__slide-second-block-footer-link-icon  primary-link__icon"
+              class="programs__slide-second-block-footer-link-icon  primary-link__icon"
               width="13"
               height="12"
               aria-hidden="true"
@@ -680,9 +680,15 @@
       </div>
     </section>
 
+    <section class="news">
+      <div class="news__inner"></div>
+    </section>
 
   </main>
-  <footer>
+  <footer class="footer">
+
+
+
   </footer>
 </div>
 
@@ -757,12 +763,63 @@
               <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
               <li class="custom-select__item" tabindex="0" data-select-value="id-4">Санкт-Петербург</li>
             </ul>
-            <!--            </div>-->
           </div>
 
+          <div
+            class="custom-toggle"
+            data-validate-type="checkbox"
+            data-on-input-validate="data-on-input-validate"
+            data-required="data-required"
+          >
+            <label class="custom-toggle__label">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                aria-label="поле ввода вашего телефона"
+              >
 
-<!--          <button class="modal__button" type="submit" aria-label="отправить заявку для обратной связи">Отправить-->
-<!--          </button>-->
+              <span></span>
+              <svg
+                width="10"
+                height="8"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#checkbox-icon"></use>
+              </svg>
+
+
+            </label>
+
+            <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
+
+          </div>
+
+          <div class="modal__button-wrapper">
+            <button class="modal__button primary-link" type="submit" aria-label="отправить заявку для обратной связи">
+              Отправить
+
+              <span>
+                <svg
+                  class="hero__slide-second-block-footer-link-icon primary-link__icon"
+                  width="10"
+                  height="10"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#arrow-up"></use>
+                </svg>
+
+              <svg
+                class="hero__slide-second-block-footer-link-icon  primary-link__icon"
+                width="13"
+                height="12"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </span>
+            </button>
+          </div>
 
         </form>
       </div>

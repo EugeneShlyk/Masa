@@ -75,6 +75,7 @@
   &.is-invalid {
     input,
     textarea {
+      background: rgba($color-wild-watermelon, 0.2);
       border: 1px solid #ff1553;
 
       &:focus,
@@ -84,28 +85,17 @@
     }
   }
 
-  &.is-valid {
-    input {
-      border: 2px solid #22b259;
-
-      &:focus,
-      &:hover {
-        border: 1px solid rgba(#22b259, 0.5);
-      }
-    }
-  }
-
-  .input-message {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
-    }
-  }
+  //.input-message {
+  //  position: absolute;
+  //  right: 0;
+  //  bottom: -5px;
+  //
+  //  &.is-invalid {
+  //    color: #ff0000;
+  //  }
+  //
+  //  &.is-valid {
+  //    color: #15ab07;
+  //  }
+  //}
 }
