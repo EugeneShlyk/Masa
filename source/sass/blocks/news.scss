@@ -15,6 +15,10 @@
   margin: 0 auto;
   padding: 124px 0 50px;
   text-align: center;
+
+  @include vp-1199 {
+    padding: 99px 0 40px;
+  }
 }
 
 .news__inner h2 {
@@ -23,6 +27,11 @@
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
+
+  @include vp-1199 {
+    margin-bottom: 31px;
+    font-size: 34px;
+  }
 }
 
 .news__box-button-category {
@@ -30,12 +39,22 @@
   justify-content: center;
   margin: 0 0 40px;
   padding: 0;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+  }
 }
 
 .news__box-inner-button-category {
   display: flex;
   column-gap: 29px;
   row-gap: 10px;
+  flex-wrap: wrap;
+  max-width: 810px;
+
+  @include vp-1199 {
+    column-gap: 8px;
+  }
 }
 
 .news__button-category {
@@ -51,6 +70,10 @@
   border: 1px solid transparent;
   border-radius: 20px;
 
+  @include vp-1199 {
+    padding: 11px 20px;
+  }
+
   &:hover:not(:disabled):not(.news__button-category--current),
   &:focus-visible:not(:disabled):not(.news__button-category--current) {
     color: rgba($color-cerulean-blue, 1);
@@ -65,7 +88,16 @@
 .news__slider {
   width: 100%;
   overflow: hidden;
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
+
+  @media (max-width: 1279px) {
+    width: 1160px;
+  }
+
+  @include vp-1199 {
+    width: 678px;
+    height: 730px;
+  }
 }
 
 .news__slider-controls {

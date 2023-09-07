@@ -27,30 +27,29 @@ export const initNewsSlider = () =>
         slidesPerView: 'auto',
         spaceBetween: 32,
       },
-      1260: {
-        slidesPerView: 'auto',
-        spaceBetween: 22,
-      },
-      1250: {
-        slidesPerView: 'auto',
-        spaceBetween: 17,
-      },
-      1240: {
-        slidesPerView: 'auto',
-        spaceBetween: 12,
-      },
-      1230: {
+      1200: {
         slidesPerView: 'auto',
         spaceBetween: 8,
       },
-      1220: {
-        slidesPerView: 'auto',
-        spaceBetween: 5,
-      },
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 2,
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+        },
       },
     },
     simulateTouch: false,
   });
+// 1260: {
+//   slidesPerView: 'auto',
+//   spaceBetween: 22,
+// },
+// 1250: {
+//   slidesPerView: 'auto',
+//   spaceBetween: 17,
+// },
+// 1240: {
+//   slidesPerView: 'auto',
+//   spaceBetween: 12,
+// },
