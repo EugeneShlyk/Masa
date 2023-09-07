@@ -1,5 +1,6 @@
 import {initHeroSlider} from './modules/hero-slider.js';
 import {toggleMenuHandler} from './modules/navigation.js';
+import {initNewsSlider} from './modules/news-slider.js';
 import {initProgramsSlider} from './modules/programs__slider.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     const select = new CustomSelect();
     select.init();
+    initNewsSlider();
   });
 });
 
