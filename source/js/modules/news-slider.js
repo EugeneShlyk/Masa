@@ -54,12 +54,3 @@ export const initNewsSlider = () =>
     },
     simulateTouch: false,
   });
-
-// 1260: {
-//   slidesPerView: 'auto',
-//     spaceBetween: 22,
-// },
-// 1250: {
-//   slidesPerView: 'auto',
-//     spaceBetween: 22,
-// },
