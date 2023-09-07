@@ -8,6 +8,7 @@ import {Form} from './modules/form-validate/form';
 import {Burger} from './vendor/burger.js';
 import {initAccordions} from './vendor/init-accordion.js';
 import {CustomSelect} from './vendor/custom-select/custom-select.js';
+import {changeClassNewsCategoryButton} from './modules/news-button-categoty.js';
 
 // ---------------------------------
 
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const select = new CustomSelect();
     select.init();
     initNewsSlider();
+    changeClassNewsCategoryButton();
   });
 });
 

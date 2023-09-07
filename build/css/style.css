@@ -4163,6 +4163,11 @@ button,
   padding: 0 20px;
   color: #316DC2;
 }
+@media (max-width: 1199px) {
+  .news {
+    padding: 0 45px;
+  }
+}
 
 .news__inner {
   width: 100%;
@@ -4180,10 +4185,47 @@ button,
   line-height: 50px;
 }
 
-.news__swiper-title {
-  height: 38px;
-  border: 1px solid #2c39f2;
-  margin-bottom: 40px;
+.news__box-button-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.news__box-inner-button-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 29px;
+     -moz-column-gap: 29px;
+          column-gap: 29px;
+  row-gap: 10px;
+}
+
+.news__button-category {
+  margin: 0;
+  padding: 11px 25px;
+  color: rgba(49, 109, 194, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.news__button-category:hover:not(:disabled):not(.news__button-category--current), .news__button-category:focus-visible:not(:disabled):not(.news__button-category--current) {
+  color: #316dc2;
+  cursor: pointer;
+}
+
+.news__button-category--current {
+  border: 1px solid #316DC2;
 }
 
 .news__slider {
@@ -4204,7 +4246,6 @@ button,
           align-items: center;
   width: 100%;
   position: relative;
-  bottom: 50px;
 }
 
 .news-slide {

@@ -709,9 +709,21 @@
 
         <h2>Новости и&nbsp;материалы</h2>
 
-        <div class="news__swiper-title"></div>
+        <!--        <div class="news__swiper-title"></div>-->
 
-<!--        <div class="news__button-category"></div>-->
+        <div class="news__box-button-category">
+          <div class="news__box-inner-button-category">
+            <button class="news__button-category news__button-category--current">общее</button>
+
+            <button class="news__button-category news__button-category--irrelevant">Волонтёрство</button>
+
+            <button class="news__button-category">Стажировки</button>
+
+            <button class="news__button-category">Карьера</button>
+
+            <button class="news__button-category">путешествия</button>
+          </div>
+        </div>
 
         <div class="news__slider swiper-container">
           <div class="swiper-wrapper">
@@ -911,30 +923,29 @@
               </div>
             </div>
 
-              <div class="news-slide__inner">
-                <div class="news-slide__inner-header">
-                  <span>10/03/2023</span>
+            <div class="news-slide__inner">
+              <div class="news-slide__inner-header">
+                <span>10/03/2023</span>
+              </div>
+
+              <div class="news-slide__inner-middle">
+                <span>Построй свою карьеру</span>
+              </div>
+
+              <div class="news-slide__inner-footer">
+                <div class="news-slide__inner-footer-text">
+                  <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                 </div>
 
-                <div class="news-slide__inner-middle">
-                  <span>Построй свою карьеру</span>
-                </div>
-
-                <div class="news-slide__inner-footer">
-                  <div class="news-slide__inner-footer-text">
-                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                  </div>
-
-                  <a class="news-slide__inner-footer-link secondary-link" href="#" aria-label="на страницу новостей">
-                    <svg
-                      width="10"
-                      height="10"
-                      aria-hidden="true"
-                    >
-                      <use href="img/sprite.svg#arrow-up"></use>
-                    </svg>
-                  </a>
-                </div>
+                <a class="news-slide__inner-footer-link secondary-link" href="#" aria-label="на страницу новостей">
+                  <svg
+                    width="10"
+                    height="10"
+                    aria-hidden="true"
+                  >
+                    <use href="img/sprite.svg#arrow-up"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -963,8 +974,8 @@
             </svg>
           </button>
         </div>
-
       </div>
+
     </section>
 
   </main>
