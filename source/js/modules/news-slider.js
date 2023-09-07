@@ -38,18 +38,13 @@ export const initNewsSlider = () =>
           rows: 2,
         },
       },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+      },
     },
     simulateTouch: false,
   });
-// 1260: {
-//   slidesPerView: 'auto',
-//   spaceBetween: 22,
-// },
-// 1250: {
-//   slidesPerView: 'auto',
-//   spaceBetween: 17,
-// },
-// 1240: {
-//   slidesPerView: 'auto',
-//   spaceBetween: 12,
-// },
