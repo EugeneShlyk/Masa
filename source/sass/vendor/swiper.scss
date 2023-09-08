@@ -359,6 +359,16 @@ button.swiper-pagination-bullet {
   background: transparent;
   text-align: center;
 
+  @media (max-width: 767px) {
+    width: 26px;
+    height: 26px;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
   &:hover,
   &:focus-visible {
     color: rgba(49, 109, 194, 1);

@@ -804,6 +804,18 @@ button.swiper-pagination-bullet {
   background: transparent;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .swiper-horizontal > .swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet {
+    width: 26px;
+    height: 26px;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}
 .swiper-horizontal > .swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet:hover, .swiper-horizontal > .swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet:focus-visible,
 .swiper-pagination-horizontal.swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet:hover,
 .swiper-pagination-horizontal.swiper-pagination-bullets.news__slider-pagination .swiper-pagination-bullet:focus-visible {
@@ -4162,6 +4174,7 @@ button,
   margin: 0;
   padding: 0 20px;
   color: #316DC2;
+  background: transparent;
 }
 @media (max-width: 1199px) {
   .news {
@@ -4170,7 +4183,7 @@ button,
 }
 @media (max-width: 767px) {
   .news {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -4230,6 +4243,7 @@ button,
 }
 @media (max-width: 767px) {
   .news__box-button-category {
+    margin-left: 15px;
     margin-bottom: 23px;
   }
 }
@@ -4314,12 +4328,14 @@ button,
   .news__slider {
     width: 678px;
     height: 730px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .news__slider {
     width: 290px;
     height: 600px;
+    margin-bottom: 13px;
   }
 }
 
@@ -4335,6 +4351,11 @@ button,
           align-items: center;
   width: 100%;
   position: relative;
+}
+@media (max-width: 767px) {
+  .news__slider-controls {
+    padding: 0 15px;
+  }
 }
 
 .news-slide {
@@ -4757,6 +4778,29 @@ button,
         align-self: center;
     margin: 0;
   }
+}
+
+.faq {
+  width: 100%;
+  margin: 0;
+  padding: 73px 45px 61px;
+}
+
+.faq h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 30px;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.faq__inner {
+  width: 948px;
+  margin: 0;
+  padding: 0;
 }
 
 /* @mixin hover-focus {
