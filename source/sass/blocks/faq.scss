@@ -6,7 +6,7 @@
 
 .faq h2 {
   width: fit-content;
-  margin: 0 auto 30px;
+  margin: 0 auto 67px;
   padding: 0;
   font-size: 50px;
   font-weight: 400;
@@ -14,7 +14,113 @@
 }
 
 .faq__inner {
-  width: 948px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1028px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.faq__inner-item {
   margin: 0;
   padding: 0;
 }
+
+.faq__inner-item-button {
+  margin: 0;
+  padding: 42px 39px 36px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 16px;
+  cursor: pointer;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    background: $color-default-white;
+
+    .faq__inner-item-icon-wrapper {
+      background: $color-default-white;
+    }
+
+    .faq__inner-item-button-icon {
+      stroke: $color-cerulean-blue;
+    }
+  }
+
+  &:active:not(:disabled) {
+    color: $color-endeavour;
+    border: 1px solid $color-endeavour;
+
+    .faq__inner-item-icon-wrapper {
+      background: $color-endeavour;
+    }
+
+    .faq__inner-item-button-icon {
+      stroke: $color-default-white;
+    }
+  }
+
+  .faq__inner-item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $color-cerulean-blue;
+    border-radius: 50%;
+    border: 1px solid $color-cerulean-blue;
+  }
+
+  .faq__inner-item-button-icon {
+    margin: 0;
+    padding: 0;
+  }
+
+  .faq__inner-item-button-icon:first-child {
+    stroke: $color-default-white;
+  }
+
+  .faq__inner-item-button-icon:last-child {
+    display: none;
+  }
+}
+
+.faq__inner-item-button.active {
+  color: $color-default-white;
+  background: $color-cerulean-blue;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+
+    .faq__inner-item-icon-wrapper {
+      background: $color-cerulean-blue;
+      border: 1px solid $color-default-white;
+    }
+
+    .faq__inner-item-button-icon {
+      stroke: $color-default-white;
+    }
+  }
+}
+
+.faq__inner-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__inner-item-header-inner-title {
+  margin: 0;
+  padding: 0;
+}
+
+.faq__inner-item-header-inner-title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+

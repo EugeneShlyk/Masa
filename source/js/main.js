@@ -1,3 +1,4 @@
+import {changeClassButtonAccordion} from './modules/button-accordion.js';
 import {initHeroSlider} from './modules/hero-slider.js';
 import {toggleMenuHandler} from './modules/navigation.js';
 import {initNewsSlider} from './modules/news-slider.js';
@@ -39,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     select.init();
     initNewsSlider();
     changeClassNewsCategoryButton();
+    changeClassButtonAccordion();
   });
 });
 
