@@ -1,0 +1,146 @@
+.comments-slide {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 14px;
+  border-radius: 16px;
+  border: 1px solid $color-cerulean-blue;
+  padding: 49px 49px 44px;
+
+  @include vp-1199 {
+    width: 560px;
+    padding-bottom: 46px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding: 30px 14px 24px;
+  }
+
+  h3 {
+    grid-column: 1 / 3;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+
+    @include vp-1199 {
+      margin: 11px 0 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      margin-top: 10px;
+      grid-column: auto;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 0;
+    color: $color-charcoal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+    @include vp-1199 {
+      margin-top: 2px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      grid-column: auto;
+      font-size: 14px;
+      margin-top: 1px;
+    }
+  }
+}
+
+.comments-slide__person {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    gap: 10px;
+  }
+}
+
+.comments-slide__person-name {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  margin: 0;
+  padding: 0;
+
+  span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @include vp-1199 {
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.comments-slide__text {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    justify-self: start;
+    gap: 26px;
+  }
+}
+
+.comments-slide__text-part {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    gap: 7px;
+  }
+
+  & span {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+  }
+
+  & p {
+    margin: 0;
+    padding: 0;
+    color: $color-charcoal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

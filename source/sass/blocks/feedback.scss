@@ -1,0 +1,43 @@
+.feedback {
+  width: 100%;
+  margin: 0;
+  padding: 120px 20px 20px;
+}
+
+.feedback__inner {
+  width: 100%;
+  max-width: 1240px;
+  height: 803px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 16px;
+  position: relative;
+  background: $color-mischka url("./../../img/feedback/feedback.webp") 50% 50% / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: $color-alabaster url("./../../img/feedback/feedback@2x.webp") 50% 50% / cover no-repeat;
+  }
+
+  @include vp-1199 {
+    background: $color-mischka url("./../../img/feedback/feedback-tablet.webp") 50% 50% / cover no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background: $color-alabaster url("./../../img/feedback/feedback-tablet@2x.webp") 50% 50% / cover no-repeat;
+    }
+  }
+}
+
+.feedback__inner-box {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 498px;
+  height: 100%;
+  margin: 0;
+  padding: 70px 74px 60px;
+  background: $color-cerulean-blue;
+  border-radius: 16px;
+}
+
+

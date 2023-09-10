@@ -20,6 +20,7 @@
   &:hover:not(:disabled),
   &:focus-visible:not(:disabled) {
     background: $color-default-white;
+    outline: none;
   }
 
   &:active:not(:disabled) {

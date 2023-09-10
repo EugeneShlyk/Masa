@@ -7,7 +7,7 @@ export const changeClassButtonAccordion = () => {
         buttons.forEach((item) => {
           item.classList.remove('active');
         });
-        if (button.classList.contains('active')) {
+        if (button.closest('.is-active')) {
           button.classList.remove('active');
         } else {
           button.classList.add('active');

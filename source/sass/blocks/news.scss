@@ -116,6 +116,7 @@
   &:focus-visible:not(:disabled):not(.news__button-category--current) {
     color: rgba($color-cerulean-blue, 1);
     cursor: pointer;
+    outline: none;
   }
 }
 

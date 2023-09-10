@@ -19,6 +19,7 @@
   &:hover,
   &:focus-visible {
     background: $color-default-white;
+    outline: none;
 
     svg {
       transform: rotate(45deg);
