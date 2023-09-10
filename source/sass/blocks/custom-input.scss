@@ -99,3 +99,42 @@
   //  }
   //}
 }
+
+.custom-input--secondary {
+
+  label {
+
+    &:hover:not(:disabled),
+    &:focus-within:not(:disabled) {
+
+      span {
+        color: $color-default-white;
+      }
+    }
+
+    input,
+    textarea {
+      color: $color-default-white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      border: 1px solid rgba($color-default-white, 0.3);
+      background: $color-cerulean-blue;
+
+      &:hover:not(:disabled) {
+        cursor: pointer;
+        outline: none;
+        border: 1px solid $color-default-white;
+      }
+
+      &:focus-visible:not(:disabled) {
+        outline: none;
+        border: 1px solid $color-default-white;
+      }
+    }
+
+    textarea {
+      min-height: 98px;
+    }
+  }
+}
