@@ -1375,9 +1375,12 @@
         <div class="contacts__map-box">
           <div class="contacts__map-wrapper">
             <iframe
-              title="месторасположение организации на сайте"
               class="contacts__map"
-              src="https://yandex.com/map-widget/v1/?um=constructor%3A7ec16ab43c3431cec3f3f5aa1da22b99af81ca90ff131db9a554440840769c36&amp;source=constructor"
+              title="месторасположение организации на сайте"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.835014045366!2d82.92557507709768!3d55.02858374753864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5dbac1b18ff%3A0xb19fdf59fc163a35!2z0JHQtdC50YIg0JzQtdC90LDRhdC10Lw!5e0!3m2!1sru!2sru!4v1694409955842!5m2!1sru!2sru"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
@@ -1407,6 +1410,7 @@
                   <input
                     type="text"
                     name="user-name"
+                    autocomplete="off"
                     aria-label="поле ввода вашего имени"
                   >
                 </label>
@@ -1424,6 +1428,7 @@
                   <input
                     type="tel"
                     name="phone"
+                    autocomplete="off"
                     aria-label="поле ввода вашего телефона"
                   >
                 </label>
@@ -1457,7 +1462,11 @@
 
                 <span>Выберите город</span>
 
-                <button class="custom-select__button" type="button" aria-label="Выберите один из предложенных городов">
+                <button
+                  class="custom-select__button custom-select__button--secondary"
+                  type="button"
+                  aria-label="Выберите один из предложенных городов"
+                >
                   <span class="custom-select__text">город</span>
                   <span class="custom-select__icon"></span>
                 </button>
@@ -1495,7 +1504,10 @@
 
                 </label>
 
-                <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
+                <div class="custom-toggle--secondary-text-wrapper">
+                  <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
+                </div>
+
               </div>
 
               <div class="form__button-wrapper">
@@ -1533,6 +1545,21 @@
   </main>
   <footer class="footer">
 
+    <div class="footer__inner">
+      <a class="footer__logo-link" href="#" aria-label="на главную страницу сайта">
+        <div class="footer__logo-image-wrapper">
+          <svg
+            width="28"
+            height="28"
+            aria-hidden="true"
+          >
+            <use href="img/sprite.svg#logo-header"></use>
+          </svg>
+        </div>
+      </a>
+
+
+    </div>
 
   </footer>
 </div>

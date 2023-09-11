@@ -270,30 +270,38 @@
 .custom-select--secondary {
   margin-bottom: 21px;
 
+  @include vp-767 {
+    margin-top: 3px;
+  }
+
   span {
     margin: 0 0 11px;
 
     @include vp-1199 {
-      margin-bottom: 7px;
+      margin-bottom: 5px;
     }
   }
+}
 
-  .custom-select__button {
-    padding: 15px 18px;
-    border: 1px solid rgba($color-default-white, 0.3);
-    justify-content: space-between;
+.custom-select__button--secondary {
+  padding: 14px 18px;
+  border: 1px solid rgba($color-default-white, 0.3);
+  justify-content: space-between;
 
-    &:hover:not(:disabled),
-    &:focus-visible:not(:disabled) {
-      border: 1px solid $color-default-white;
-    }
+  @include vp-767 {
+    margin-top: 6px;
+  }
 
-    .custom-select__icon {
-      background: $color-default-white;
-    }
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    border: 1px solid $color-default-white;
+  }
 
-    span {
-      margin: 0;
-    }
+  .custom-select__icon {
+    background: $color-default-white;
+  }
+
+  span {
+    margin: 0;
   }
 }
