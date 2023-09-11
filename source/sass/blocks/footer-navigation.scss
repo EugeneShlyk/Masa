@@ -1,11 +1,15 @@
 .footer-navigation {
   max-width: 610px;
   display: flex;
-  gap: 30px;
+  gap: 30.5px;
   flex-wrap: wrap;
   margin: 13px 0 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1199 {
+    gap: 15.5px;
+  }
 }
 
 .footer-navigation__item {
@@ -20,4 +24,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $color-cerulean-blue;
+  }
+
+  &:active:not(:disabled) {
+    color: $color-endeavour;
+  }
 }
+
+
+
+
+
+
