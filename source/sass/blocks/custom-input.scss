@@ -104,6 +104,10 @@
 
   label {
 
+    span {
+      margin: 0 0 8px;
+    }
+
     &:hover:not(:disabled),
     &:focus-within:not(:disabled) {
 
@@ -114,6 +118,7 @@
 
     input,
     textarea {
+      padding: 15px 15px 14px;
       color: $color-default-white;
       font-size: 14px;
       font-weight: 400;

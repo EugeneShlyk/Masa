@@ -2,12 +2,20 @@
   width: 100%;
   margin: 0;
   padding: 120px 20px 20px;
+
+  @include vp-1199 {
+    padding: 100px 45px 20px;
+  }
+
+  @include vp-767 {
+    padding: 67px 15px 20px;
+  }
 }
 
 .feedback__inner {
   width: 100%;
   max-width: 1240px;
-  height: 803px;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   border-radius: 16px;
@@ -19,25 +27,35 @@
   }
 
   @include vp-1199 {
-    background: $color-mischka url("./../../img/feedback/feedback-tablet.webp") 50% 50% / cover no-repeat;
+    background: $color-mischka url("./../../img/feedback/feedback-tablet.webp") 0 50% / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: $color-alabaster url("./../../img/feedback/feedback-tablet@2x.webp") 50% 50% / cover no-repeat;
+      background: $color-alabaster url("./../../img/feedback/feedback-tablet@2x.webp") 0 50% / cover no-repeat;
     }
   }
 }
 
 .feedback__inner-box {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 498px;
   height: 100%;
   margin: 0;
-  padding: 82px 74px 60px;
+  padding: 82px 74px 51px;
   background: $color-cerulean-blue;
   border-radius: 16px;
+
+  @include vp-1199 {
+    width: 442px;
+    padding: 60px 45px 58px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 51px 15px 49px;
+  }
 
   h2 {
     margin: 0 0 25px;
@@ -46,6 +64,18 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 36px;
+
+    @include vp-1199 {
+      margin-bottom: 28px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 17px;
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   & > p {
@@ -55,6 +85,15 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+
+    @include vp-1199 {
+      margin-bottom: 32px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+    }
   }
 }
 

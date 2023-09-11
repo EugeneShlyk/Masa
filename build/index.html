@@ -1377,7 +1377,7 @@
             <iframe
               title="месторасположение организации на сайте"
               class="contacts__map"
-              src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=82.928281%2C55.028522&mode=whatshere&whatshere%5Bpoint%5D=82.928083%2C55.028472&whatshere%5Bzoom%5D=17&z=17"
+              src="https://yandex.com/map-widget/v1/?um=constructor%3A7ec16ab43c3431cec3f3f5aa1da22b99af81ca90ff131db9a554440840769c36&amp;source=constructor"
             ></iframe>
           </div>
 
@@ -1470,6 +1470,59 @@
 
               </div>
 
+              <div
+                class="custom-toggle custom-toggle--secondary"
+                data-validate-type="checkbox"
+                data-on-input-validate="data-on-input-validate"
+                data-required="data-required"
+              >
+                <label class="custom-toggle__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    aria-label="поле ввода вашего телефона"
+                  >
+
+                  <span></span>
+                  <svg
+                    width="10"
+                    height="8"
+                    aria-hidden="true"
+                  >
+                    <use href="img/sprite.svg#checkbox-icon"></use>
+                  </svg>
+
+
+                </label>
+
+                <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
+              </div>
+
+              <div class="form__button-wrapper">
+                <button class="form__button" type="submit" aria-label="отправить заявку для обратной связи">
+                  Отправить
+
+                  <span>
+                    <svg
+                      class="form__button-icon"
+                      width="10"
+                      height="10"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-up"></use>
+                    </svg>
+
+                    <svg
+                      class="form__button-icon"
+                      width="13"
+                      height="12"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
 
             </form>
           </div>
@@ -1591,12 +1644,12 @@
           </div>
 
           <div class="modal__button-wrapper">
-            <button class="modal__button primary-link" type="submit" aria-label="отправить заявку для обратной связи">
+            <button class="modal__button primary-link" type="submit" aria-label="отправить заявку для связи с вами">
               Отправить
 
               <span>
                 <svg
-                  class="hero__slide-second-block-footer-link-icon primary-link__icon"
+                  class="primary-link__icon"
                   width="10"
                   height="10"
                   aria-hidden="true"
@@ -1605,7 +1658,7 @@
                 </svg>
 
               <svg
-                class="hero__slide-second-block-footer-link-icon  primary-link__icon"
+                class="primary-link__icon"
                 width="13"
                 height="12"
                 aria-hidden="true"
