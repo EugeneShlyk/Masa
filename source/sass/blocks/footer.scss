@@ -7,6 +7,10 @@
   @include vp-1199 {
     padding: 40px 45px 50px;
   }
+
+  @include vp-767 {
+    padding: 9px 15px 40px;
+  }
 }
 
 .footer__inner {
@@ -19,8 +23,9 @@
   margin: 0 auto;
   padding: 0;
 
-  @include vp-1199 {
-    //grid-template-columns: auto 1fr;
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
   }
 }
 
@@ -32,6 +37,12 @@
     grid-column: 1 / 3;
     justify-content: space-between;
   }
+
+  @include vp-767 {
+    grid-column: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .footer__logo-link {
@@ -42,6 +53,7 @@
   background: rgba($color-white, 1);
   border-radius: 50%;
   position: relative;
+  user-select: none;
 
   &:hover,
   &:focus-visible {
@@ -55,6 +67,10 @@
     svg {
       fill: $color-endeavour;
     }
+  }
+
+  @include vp-767 {
+    align-self: center;
   }
 }
 
@@ -81,11 +97,20 @@
     grid-column: auto;
     flex-direction: column-reverse;
   }
+
+  @include vp-767 {
+    margin-top: 1px;
+  }
 }
 
 .footer__text-first {
   margin: 1px 0 0;
   padding: 0;
+
+  @include vp-767 {
+    display: flex;
+    justify-content: center;
+  }
 
   p {
     width: fit-content;
@@ -107,6 +132,12 @@
 .footer__text-second {
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
 
   p {
     width: fit-content;

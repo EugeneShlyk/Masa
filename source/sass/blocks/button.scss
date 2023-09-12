@@ -8,6 +8,7 @@
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+  user-select: none;
 
   svg {
     position: absolute;

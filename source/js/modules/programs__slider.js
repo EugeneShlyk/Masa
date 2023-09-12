@@ -13,7 +13,7 @@ export const initProgramsSlider = () =>
       el: '.programs__scroll',
       draggable: true,
     },
-    // simulateTouch: false,
+    simulateTouch: false,
     breakpoints: {
       320: {
         slidesPerView: 1,

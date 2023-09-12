@@ -291,6 +291,7 @@
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
   display: inline-block;
+  user-select: none;
   border-radius: 50%;
   background: var(--swiper-pagination-bullet-inactive-color, #FFF);
   border: 1px solid #316DC2;

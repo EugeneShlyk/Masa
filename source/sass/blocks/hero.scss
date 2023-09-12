@@ -142,6 +142,7 @@
 }
 
 .hero__slide-inner {
+  display: none;
   min-height: 800px;
   margin: 0;
   padding: 447px 20px 60px;
@@ -156,6 +157,10 @@
     min-height: 568px;
     padding: 261px 15px 20px;
   }
+}
+
+.swiper-slide-active .hero__slide-inner {
+  display: block;
 }
 
 .hero__slide-inner-box {
@@ -320,4 +325,8 @@
   width: 10px;
   height: 10px;
   background: url("../../img/svg/second-radius-mobile.svg");
+}
+
+.hero__slide-second-block-footer-link {
+  user-select: none;
 }

@@ -100,6 +100,7 @@
   background: transparent;
   border: 1px solid transparent;
   border-radius: 20px;
+  user-select: none;
 
   @include vp-1199 {
     padding: 11px 20px;
@@ -112,11 +113,15 @@
     letter-spacing: 0.24px;
   }
 
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    outline: none;
+  }
+
   &:hover:not(:disabled):not(.news__button-category--current),
   &:focus-visible:not(:disabled):not(.news__button-category--current) {
     color: rgba($color-cerulean-blue, 1);
     cursor: pointer;
-    outline: none;
   }
 }
 

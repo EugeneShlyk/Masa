@@ -13,6 +13,10 @@
     gap: 10px;
     margin: 0;
   }
+
+  @include vp-767 {
+    justify-self: center;
+  }
 }
 
 .social__item {
@@ -20,6 +24,11 @@
   height: 36px;
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .social__item-link {
@@ -32,13 +41,20 @@
   height: 100%;
   background: $color-cerulean-blue;
   border-radius: 50%;
+  user-select: none;
 
   .social__item-link-icon {
     fill: $color-default-white;
+
+    @include vp-767 {
+      transform: scale(0.75);
+    }
   }
 
   &:hover:not(:disabled),
   &:focus-visible:not(:disabled) {
+    outline: none;
+
     .social__item-link-icon {
       fill: rgba($color-default-white, 0.6);
     }
