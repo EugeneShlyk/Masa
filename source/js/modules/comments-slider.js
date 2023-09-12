@@ -20,6 +20,7 @@ export const initCommentsSlider = () =>
         spaceBetween: 32,
       },
       1200: {
+        slidesPerView: 2,
         spaceBetween: 6,
       },
       768: {
