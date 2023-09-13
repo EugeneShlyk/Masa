@@ -1,4 +1,6 @@
 .navigation-list {
+  display: none;
+  width: fit-content;
   min-width: 286px;
   margin: 0;
   padding: 0;
@@ -8,7 +10,8 @@
   height: 0;
 }
 
-.header--navigation-opened .navigation-list {
+.is-open .navigation-list {
+  display: block;
   height: auto;
   padding: 29px 25px 13px;
   transition: all 0.3s;
@@ -40,14 +43,6 @@
     svg {
       stroke: $color-default-white;
     }
-  }
-}
-
-.header--navigation-closed {
-
-  .navigation-list__item-link,
-  .navigation-list__sublist-item-link {
-    display: none;
   }
 }
 

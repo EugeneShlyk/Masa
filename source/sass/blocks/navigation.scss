@@ -11,6 +11,14 @@
   user-select: none;
 }
 
+.navigation.is-open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navigation__button-icon:last-child {
   display: none;
 }
@@ -93,7 +101,7 @@
   }
 }
 
-.navigation__button--opened-menu {
+.is-open .navigation__button {
   color: $color-default-white;
   background: $color-cerulean-blue;
   min-width: 286px;

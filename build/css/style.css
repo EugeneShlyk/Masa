@@ -2658,7 +2658,7 @@ button,
 
 .header {
   position: absolute;
-  top: 31px;
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -2685,7 +2685,7 @@ button,
      -moz-column-gap: 100px;
           column-gap: 100px;
   width: 100%;
-  margin: 0;
+  margin: 31px 0 0;
   padding: 0 20px;
   background: transparent;
 }
@@ -3779,6 +3779,14 @@ button,
           user-select: none;
 }
 
+.navigation.is-open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navigation__button-icon:last-child {
   display: none;
 }
@@ -3861,36 +3869,40 @@ button,
   background: #A9AFB7;
 }
 
-.navigation__button--opened-menu {
+.is-open .navigation__button {
   color: #ffffff;
   background: #316DC2;
   min-width: 286px;
 }
-.navigation__button--opened-menu span {
+.is-open .navigation__button span {
   background: #ffffff;
 }
-.navigation__button--opened-menu svg {
+.is-open .navigation__button svg {
   stroke: #316DC2;
 }
-.navigation__button--opened-menu:hover:not(:disabled), .navigation__button--opened-menu:focus-visible:not(:disabled) {
+.is-open .navigation__button:hover:not(:disabled), .is-open .navigation__button:focus-visible:not(:disabled) {
   color: #316DC2;
   background: #ffffff;
   outline: none;
 }
-.navigation__button--opened-menu:hover:not(:disabled) span, .navigation__button--opened-menu:focus-visible:not(:disabled) span {
+.is-open .navigation__button:hover:not(:disabled) span, .is-open .navigation__button:focus-visible:not(:disabled) span {
   background: #316DC2;
 }
-.navigation__button--opened-menu:hover:not(:disabled) svg, .navigation__button--opened-menu:focus-visible:not(:disabled) svg {
+.is-open .navigation__button:hover:not(:disabled) svg, .is-open .navigation__button:focus-visible:not(:disabled) svg {
   stroke: #ffffff;
 }
-.navigation__button--opened-menu:active:not(:disabled) {
+.is-open .navigation__button:active:not(:disabled) {
   color: rgba(49, 109, 194, 0.5);
 }
-.navigation__button--opened-menu:active:not(:disabled) svg {
+.is-open .navigation__button:active:not(:disabled) svg {
   stroke: rgba(255, 255, 255, 0.5);
 }
 
 .navigation-list {
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   min-width: 286px;
   margin: 0;
   padding: 0;
@@ -3900,7 +3912,8 @@ button,
   height: 0;
 }
 
-.header--navigation-opened .navigation-list {
+.is-open .navigation-list {
+  display: block;
   height: auto;
   padding: 29px 25px 13px;
   -webkit-transition: all 0.3s;
@@ -3931,11 +3944,6 @@ button,
 }
 .navigation-list__item-link:hover:not(:disabled) svg, .navigation-list__item-link:focus-visible:not(:disabled) svg {
   stroke: #ffffff;
-}
-
-.header--navigation-closed .navigation-list__item-link,
-.header--navigation-closed .navigation-list__sublist-item-link {
-  display: none;
 }
 
 .navigation-list__item-link-icon {

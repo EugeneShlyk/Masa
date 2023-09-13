@@ -1,7 +1,7 @@
 import {changeClassButtonAccordion} from './modules/button-accordion.js';
 import {initCommentsSlider} from './modules/comments-slider.js';
 import {initHeroSlider} from './modules/hero-slider.js';
-import {toggleMenuHandler} from './modules/navigation.js';
+// import {toggleMenuHandler} from './modules/navigation.js';
 import {initNewsSlider} from './modules/news-slider.js';
 import {initProgramsSlider} from './modules/programs__slider.js';
 import {removeFocusOnSubmenu} from './modules/removeFocusSubmenuLink.js';
@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initProgramsSlider();
-    toggleMenuHandler();
+    // toggleMenuHandler();
     const select = new CustomSelect();
     select.init();
     initNewsSlider();

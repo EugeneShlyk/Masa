@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  top: 31px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -20,7 +20,7 @@
   grid-template-columns: auto auto;
   column-gap: 100px;
   width: 100%;
-  margin: 0;
+  margin: 31px 0 0;
   padding: 0 20px;
   background: transparent;
 
