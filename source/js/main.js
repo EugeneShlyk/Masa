@@ -4,7 +4,7 @@ import {initHeroSlider} from './modules/hero-slider.js';
 import {toggleMenuHandler} from './modules/navigation.js';
 import {initNewsSlider} from './modules/news-slider.js';
 import {initProgramsSlider} from './modules/programs__slider.js';
-import {removeFocusOnSubmenu} from './modules/removeFocusSubmeuLink.js';
+import {removeFocusOnSubmenu} from './modules/removeFocusSubmenuLink.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
@@ -12,6 +12,7 @@ import {Burger} from './vendor/burger.js';
 import {initAccordions} from './vendor/init-accordion.js';
 import {CustomSelect} from './vendor/custom-select/custom-select.js';
 import {changeClassNewsCategoryButton} from './modules/news-button-categoty.js';
+
 
 // ---------------------------------
 
@@ -22,6 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initHeroSlider();
+  const burger = new Burger();
+  burger.init();
+  initAccordions();
+  removeFocusOnSubmenu();
 
   // Modules
   // ---------------------------------
@@ -35,16 +40,12 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initProgramsSlider();
     toggleMenuHandler();
-    const burger = new Burger();
-    burger.init();
-    initAccordions();
     const select = new CustomSelect();
     select.init();
     initNewsSlider();
     changeClassNewsCategoryButton();
     changeClassButtonAccordion();
     initCommentsSlider();
-    removeFocusOnSubmenu();
   });
 });
 

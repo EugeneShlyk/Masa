@@ -8,7 +8,6 @@ export const changeClassNewsCategoryButton = () => {
       currentButton.classList.remove('news__button-category--current');
       evt.target.classList.add('news__button-category--current');
       currentButton = evt.target;
-      // return currentButton;
     }
   });
 };

@@ -6,6 +6,5 @@ export const removeFocusOnSubmenu = () => {
     item.addEventListener('click', () =>
       item.closest('.navigation-list__item').querySelector('.navigation-list__sublist')
           .classList.toggle('sublist-active')
-    ))
-  ;
+    ));
 };

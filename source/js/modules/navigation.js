@@ -6,8 +6,8 @@ const body = document.querySelector('body');
 const menuLinks = document.querySelectorAll('.navigation__list-item-link');
 
 export const toggleMenuHandler = () => {
-  menuLinks.forEach((link) => link.addEventListener('click', closeModal));
 
+  menuLinks.forEach((link) => link.addEventListener('click', closeModal));
   navigationToggle.addEventListener('click', () => {
     if (header.classList.contains('header--navigation-closed')) {
       header.classList.remove('header--navigation-closed');
