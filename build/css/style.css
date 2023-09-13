@@ -3960,9 +3960,14 @@ button,
 }
 
 .navigation-list__sublist {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-list__sublist.sublist-active {
+  display: block;
 }
 
 .navigation-list__sublist-item {

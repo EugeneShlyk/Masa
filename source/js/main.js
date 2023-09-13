@@ -4,6 +4,7 @@ import {initHeroSlider} from './modules/hero-slider.js';
 import {toggleMenuHandler} from './modules/navigation.js';
 import {initNewsSlider} from './modules/news-slider.js';
 import {initProgramsSlider} from './modules/programs__slider.js';
+import {removeFocusOnSubmenu} from './modules/removeFocusSubmeuLink.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
@@ -43,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     changeClassNewsCategoryButton();
     changeClassButtonAccordion();
     initCommentsSlider();
+    removeFocusOnSubmenu();
   });
 });
 
