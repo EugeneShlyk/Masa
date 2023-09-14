@@ -87,13 +87,11 @@
 }
 
 .custom-input--secondary {
-
   @include vp-767 {
     padding: 4px 0 10px;
   }
 
   label {
-
     @include vp-767 {
       margin-bottom: 7px;
     }
@@ -112,7 +110,6 @@
 
     &:hover:not(:disabled),
     &:focus-within:not(:disabled) {
-
       span {
         color: $color-default-white;
       }
