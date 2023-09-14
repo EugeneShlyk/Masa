@@ -4,15 +4,10 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   background: transparent;
   z-index: 3;
-
-  @include vp-767 {
-    top: 20px;
-  }
 }
 
 .header__inner {
@@ -20,7 +15,8 @@
   grid-template-columns: auto auto;
   column-gap: 100px;
   width: 100%;
-  margin: 31px 0 0;
+  max-width: 1280px;
+  margin: 31px auto 0;
   padding: 0 20px;
   background: transparent;
 
@@ -29,6 +25,7 @@
   }
 
   @include  vp-767 {
+    margin-top: 20px;
     padding: 0 15px;
   }
 }
