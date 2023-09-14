@@ -12,7 +12,7 @@ export const initNewsSlider = () =>
       el: '.news__slider-pagination',
       clickable: true,
       renderBullet:
-        function (index, className) {
+        (index, className) => {
           return '<span class="' +
             className +
             '">' +
