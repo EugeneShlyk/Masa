@@ -11,15 +11,38 @@
 }
 
 .is-open .navigation-list {
+  position: absolute;
+  top: 88px;
+  right: 50%;
+  transform: translateX(620px);
   display: block;
   height: auto;
   padding: 29px 25px 13px;
   transition: all 0.3s;
+
+  @media (max-width: 1279px) {
+    right: 20px;
+    transform: none;
+  }
+
+  @include vp-1199 {
+    right: 45px;
+  }
+
+  @include vp-767 {
+    top: 78px;
+    right: 15px;
+    width: 290px;
+  }
 }
 
 .navigation-list__item {
   margin: 0 0 16px;
   padding: 0;
+}
+
+.navigation-list__item.is-active {
+  margin-bottom: 11px;
 }
 
 .navigation-list__item-link {
@@ -69,7 +92,7 @@
 .navigation-list__sublist {
   display: none;
   margin: 0;
-  padding: 0;
+  padding: 9px 0 0;
   list-style: none;
 }
 

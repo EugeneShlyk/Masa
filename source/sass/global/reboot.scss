@@ -32,18 +32,7 @@ body {
   height: 100%;
   position: relative;
 
-  background-color: #F0EFE9;
-}
-
-.body-navigation-overlay::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba($color-black-pearl, 0.4);
+  background-color: #f0efe9;
 }
 
 a {

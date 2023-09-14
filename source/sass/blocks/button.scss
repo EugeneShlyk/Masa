@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    stroke: #316DC2;
+    stroke: $color-cerulean-blue;
   }
 
   &:hover:not(:disabled),
@@ -36,6 +36,3 @@
     }
   }
 }
-
-
-
