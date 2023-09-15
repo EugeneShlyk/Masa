@@ -9,8 +9,6 @@ export const focusSlider = (iSlider, swiper) => {
   };
 
   links.forEach((
-    (link) => {
-      link.addEventListener('focus', func);
-    }
+    (link) => links.length > 0 && link.addEventListener('focus', func)
   ));
 };

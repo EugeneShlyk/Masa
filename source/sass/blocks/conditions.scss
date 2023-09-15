@@ -130,6 +130,7 @@
   margin: 0;
   padding: 0 0 0 20px;
   list-style: none;
+  counter-reset: number 0;
 
   @include vp-1199 {
     grid-template-columns: 46.2% 46.2%;
@@ -152,6 +153,7 @@
   border-radius: 16px;
   border: 1px solid $color-default-white;
   position: relative;
+  counter-increment: number;
 
   @include vp-1199 {
     padding: 25px 24px;
@@ -160,113 +162,32 @@
   @include vp-767 {
     padding: 18px 24px;
   }
-}
 
-.conditions__list-item--1::before {
-  content: "1";
-  position: absolute;
-  top: -16px;
-  left: -21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.22px;
-  text-transform: uppercase;
-  background: $color-cerulean-blue;
+  &::before {
+    content: counter(number);
+    position: absolute;
+    top: -16px;
+    left: -21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    background: $color-cerulean-blue;
 
-  @include vp-767 {
-    top: -8px;
-    left: -13px;
-    width: 26px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-
-.conditions__list-item--2::before {
-  content: "2";
-  position: absolute;
-  top: -16px;
-  left: -21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.22px;
-  text-transform: uppercase;
-  background: $color-cerulean-blue;
-
-  @include vp-767 {
-    top: -8px;
-    left: -13px;
-    width: 26px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-
-.conditions__list-item--3::before {
-  content: "3";
-  position: absolute;
-  top: -16px;
-  left: -21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.22px;
-  text-transform: uppercase;
-  background: $color-cerulean-blue;
-
-  @include vp-767 {
-    top: -8px;
-    left: -13px;
-    width: 26px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-
-.conditions__list-item--4::before {
-  content: "4";
-  position: absolute;
-  top: -16px;
-  left: -21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.22px;
-  text-transform: uppercase;
-  background: $color-cerulean-blue;
-
-  @include vp-767 {
-    top: -8px;
-    left: -13px;
-    width: 26px;
-    height: 34px;
-    font-size: 18px;
-    line-height: 18px;
+    @include vp-767 {
+      top: -8px;
+      left: -13px;
+      width: 26px;
+      height: 34px;
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }
 
