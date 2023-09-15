@@ -74,6 +74,7 @@
     padding-right: 138px;
     margin-bottom: 36px;
     line-height: 20px;
+    letter-spacing: 0.008em;
   }
 
   @include vp-767 {
@@ -115,6 +116,7 @@
     margin-bottom: 42px;
     font-size: 28px;
     line-height: 28px;
+    letter-spacing: -0.004em;
   }
 
   @include vp-767 {
