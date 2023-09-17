@@ -70,25 +70,25 @@
 }
 
 .hero__slide-3 {
-  background: rgba($color-cerulean-blue, 1) url("./../../img/hero/hero-card-3/hero-card-3.webp") 50% 50% / cover no-repeat;
+  background: rgba($color-cerulean-blue, 1) url("./../../img/hero/hero-card-3/hero-card-3.webp") 0 0 / cover no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background: rgba($color-cerulean-blue, 1) url("./../../img/hero/hero-card-3/hero-card-3@2x.webp") 50% 50% / cover no-repeat;
+    background: rgba($color-cerulean-blue, 1) url("./../../img/hero/hero-card-3/hero-card-3@2x.webp") 0 0 / cover no-repeat;
   }
 
   @include vp-1199 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet.webp") 50% 50% / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet.webp") 0 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet@2x.webp") 50% 50% / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet@2x.webp") 0 0 / cover no-repeat;
     }
   }
 
   @include vp-767 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile.webp") 50% 50% / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile.webp") 0 20% / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile@2x.webp") 50% 50% / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile@2x.webp") 0 20% / cover no-repeat;
     }
   }
 }
@@ -109,10 +109,10 @@
   }
 
   @include vp-767 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile.webp") 50% 50% / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile.webp") 0 30% / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile@2x.webp") 50% 50% / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile@2x.webp") 0 30% / cover no-repeat;
     }
   }
 }
@@ -133,10 +133,10 @@
   }
 
   @include vp-767 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile.webp") 50% 50% / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile.webp") 0 30% / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile@2x.webp") 50% 50% / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile@2x.webp") 0 30% / cover no-repeat;
     }
   }
 }

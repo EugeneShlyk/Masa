@@ -31,13 +31,7 @@
   width: 100vw;
   height: 100vh;
   background: rgba($color-black-pearl, 0.4);
-}
 
-.navigation__button-icon:last-child {
-  display: none;
-}
-
-.navigation__button--opened-menu {
   .navigation__button-icon:last-child {
     display: block;
   }
@@ -45,6 +39,10 @@
   .navigation__button-icon:first-child {
     display: none;
   }
+}
+
+.navigation__button-icon:last-child {
+  display: none;
 }
 
 .navigation__button {

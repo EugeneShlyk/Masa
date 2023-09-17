@@ -2339,31 +2339,31 @@ button,
 }
 
 .hero__slide-3 {
-  background: #316dc2 url("./../../img/hero/hero-card-3/hero-card-3.webp") 50% 50%/cover no-repeat;
+  background: #316dc2 url("./../../img/hero/hero-card-3/hero-card-3.webp") 0 0/cover no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .hero__slide-3 {
-    background: #316dc2 url("./../../img/hero/hero-card-3/hero-card-3@2x.webp") 50% 50%/cover no-repeat;
+    background: #316dc2 url("./../../img/hero/hero-card-3/hero-card-3@2x.webp") 0 0/cover no-repeat;
   }
 }
 @media (max-width: 1199px) {
   .hero__slide-3 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet.webp") 0 0/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .hero__slide-3 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet@2x.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-tablet@2x.webp") 0 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
   .hero__slide-3 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile.webp") 0 20%/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero__slide-3 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile@2x.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-3/hero-card-3-mobile@2x.webp") 0 20%/cover no-repeat;
   }
 }
 
@@ -2387,12 +2387,12 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slide-2 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile.webp") 0 30%/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero__slide-2 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile@2x.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-2/hero-card-2-mobile@2x.webp") 0 30%/cover no-repeat;
   }
 }
 
@@ -2416,12 +2416,12 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slide-1 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile.webp") 0 30%/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero__slide-1 {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile@2x.webp") 50% 50%/cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-card-1/hero-card-1-mobile@2x.webp") 0 30%/cover no-repeat;
   }
 }
 
@@ -3239,10 +3239,11 @@ button,
 }
 @media (max-width: 767px) {
   .programs__slider {
-    width: 290px;
+    width: 100%;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+    overflow: hidden;
   }
 }
 
@@ -3565,8 +3566,11 @@ button,
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
+  padding-top: 107%;
   background: rgba(49, 109, 194, 0.2);
   border-radius: 12px;
 }
@@ -3805,15 +3809,14 @@ button,
   height: 100vh;
   background: rgba(13, 29, 51, 0.4);
 }
-
-.navigation__button-icon:last-child {
+.navigation.is-open .navigation__button-icon:last-child {
+  display: block;
+}
+.navigation.is-open .navigation__button-icon:first-child {
   display: none;
 }
 
-.navigation__button--opened-menu .navigation__button-icon:last-child {
-  display: block;
-}
-.navigation__button--opened-menu .navigation__button-icon:first-child {
+.navigation__button-icon:last-child {
   display: none;
 }
 
@@ -5278,8 +5281,19 @@ button,
 }
 
 .faq__inner-item-button.active {
+  padding: 39px 39px 32px;
   color: #ffffff;
   background: #316dc2;
+}
+@media (max-width: 1199px) {
+  .faq__inner-item-button.active {
+    padding: 29px 29px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .faq__inner-item-button.active {
+    padding: 20px 14px 18px;
+  }
 }
 .faq__inner-item-button.active .faq__inner-item-icon-wrapper {
   background: #ffffff;
@@ -5364,13 +5378,11 @@ button,
   font-size: 28px;
   font-weight: 400;
   line-height: 34px;
-  letter-spacing: -0.009em;
 }
 @media (max-width: 1199px) {
   .faq__inner-item-header-inner-title h3 {
     font-size: 22px;
     line-height: 26px;
-    letter-spacing: 0.001em;
   }
 }
 @media (max-width: 767px) {
@@ -5381,20 +5393,20 @@ button,
 }
 
 .faq__inner-item-footer p {
-  margin: 13px 250px -7px 0;
+  margin: 13px 250px 0 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
 @media (max-width: 1199px) {
   .faq__inner-item-footer p {
-    margin: 16px 93px -3px 0;
+    margin: 16px 93px 0 0;
     line-height: 20px;
   }
 }
 @media (max-width: 767px) {
   .faq__inner-item-footer p {
-    margin: 14px 0 -4px;
+    margin: 14px 0 0;
     font-size: 14px;
   }
 }
@@ -5407,7 +5419,7 @@ button,
 }
 @media (max-width: 1199px) {
   .comments {
-    padding: 48px 20px 101px;
+    padding: 48px 45px 101px;
   }
 }
 @media (max-width: 767px) {
@@ -5471,7 +5483,7 @@ button,
 }
 @media (max-width: 1199px) {
   .comments__slider {
-    width: 678px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -6128,11 +6140,20 @@ button,
 }
 @media (max-width: 767px) {
   .form__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
-    padding: 3px 3px 3px 74px;
+    padding: 2px 3px 2px 3px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .form__button p {
+    margin-right: 37px;
   }
 }
 .form__button span {
@@ -6152,6 +6173,9 @@ button,
 }
 @media (max-width: 767px) {
   .form__button span {
+    position: absolute;
+    top: 3px;
+    right: 3px;
     width: 34px;
     height: 34px;
   }
