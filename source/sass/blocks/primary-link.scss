@@ -4,7 +4,7 @@
   align-items: center;
   gap: 30px;
   margin: 0;
-  padding: 3px 3px 3px 29px;
+  padding: 19px 78px 19px 29px;
   background: $color-default-white;
   border: 1px solid $color-cerulean-blue;
   border-radius: 30px;
@@ -17,16 +17,21 @@
   text-transform: uppercase;
   outline: none;
   user-select: none;
+  position: relative;
 
   @include vp-767 {
     gap: 20px;
-    padding: 3px 3px 3px 19px;
+    padding: 14px 58px 14px 19px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
   }
 
   span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
     display: flex;
     justify-content: center;
     align-items: center;

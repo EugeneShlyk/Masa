@@ -1733,6 +1733,11 @@ button,
   width: 100%;
   margin: 0 0 16px;
 }
+.custom-input label:hover:not(:disabled) span, .custom-input label:focus-within:not(:disabled) span,
+.custom-textarea label:hover:not(:disabled) span,
+.custom-textarea label:focus-within:not(:disabled) span {
+  color: #484848;
+}
 @media screen and (max-width: 767px) {
   .custom-input label,
 .custom-textarea label {
@@ -1858,7 +1863,6 @@ button,
 }
 .custom-input--secondary label input:hover:not(:disabled),
 .custom-input--secondary label textarea:hover:not(:disabled) {
-  cursor: pointer;
   outline: none;
   border: 1px solid #ffffff;
 }
@@ -1914,10 +1918,16 @@ button,
 }
 
 .custom-toggle__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0 0 0 30px;
   cursor: pointer;
 }
 .custom-toggle__label input:disabled {
@@ -1946,11 +1956,8 @@ button,
 .custom-toggle__label svg {
   position: absolute;
   display: none;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 5px;
+  left: 5px;
 }
 .custom-toggle__label:hover:not(:disabled) span, .custom-toggle__label:focus-within:not(:disabled) span {
   border: 1px solid white;
@@ -1959,26 +1966,11 @@ button,
 .custom-toggle__label:hover:not(:disabled) svg, .custom-toggle__label:focus-within:not(:disabled) svg {
   stroke: #ffffff;
 }
-
-.custom-toggle--secondary {
-  padding-bottom: 39px;
-}
-@media (max-width: 767px) {
-  .custom-toggle--secondary {
-    padding-bottom: 29px;
-  }
-}
-.custom-toggle--secondary p {
-  color: rgba(255, 255, 255, 0.9);
-}
-@media (max-width: 767px) {
-  .custom-toggle--secondary p {
-    margin-left: 5px;
-    line-height: 14px;
-  }
+.custom-toggle__label:hover:not(:disabled) p, .custom-toggle__label:focus-within:not(:disabled) p {
+  color: #484848;
 }
 
-.custom-toggle__text-wrapper {
+.custom-toggle__label--secondary .custom-toggle__text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1986,6 +1978,19 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: rgba(240, 239, 233, 0.8);
+}
+.custom-toggle__label--secondary:hover:not(:disabled) p, .custom-toggle__label--secondary:focus-within:not(:disabled) p {
+  color: #ffffff;
+}
+
+.custom-toggle--secondary {
+  padding-bottom: 39px;
+}
+@media (max-width: 767px) {
+  .custom-toggle--secondary {
+    padding-bottom: 34px;
+  }
 }
 
 .custom-select {
@@ -2021,6 +2026,9 @@ button,
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+}
+.custom-select select:hover:not(:disabled) span, .custom-select select:focus-within:not(:disabled) span {
+  color: #484848;
 }
 .custom-select__button {
   display: -webkit-box;
@@ -2226,9 +2234,13 @@ button,
 .custom-select--secondary {
   margin-bottom: 21px;
 }
+.custom-select--secondary:focus-within > span {
+  color: #ffffff;
+}
 @media (max-width: 767px) {
   .custom-select--secondary {
     margin-top: 3px;
+    margin-bottom: 24px;
   }
 }
 .custom-select--secondary span {
@@ -2252,14 +2264,22 @@ button,
     margin-top: 6px;
   }
 }
-.custom-select__button--secondary:hover:not(:disabled), .custom-select__button--secondary:focus-visible:not(:disabled) {
+.custom-select__button--secondary:hover:not(:disabled), .custom-select__button--secondary:focus:not(:disabled) {
   border: 1px solid #ffffff;
+}
+.custom-select__button--secondary:hover:not(:disabled) .custom-select__text, .custom-select__button--secondary:focus:not(:disabled) .custom-select__text {
+  color: #ffffff;
 }
 .custom-select__button--secondary .custom-select__icon {
   background: #ffffff;
 }
 .custom-select__button--secondary span {
   margin: 0;
+}
+
+.custom-select--secondary > span:hover {
+  color: #ffffff;
+  cursor: text;
 }
 
 .hero {
@@ -3222,7 +3242,7 @@ button,
     -ms-grid-column-align: start;
         justify-self: start;
     gap: 30px;
-    padding: 3px 3px 3px 30px;
+    padding: 14px 68px 14px 30px;
   }
 }
 
@@ -3312,7 +3332,7 @@ button,
           align-items: center;
   gap: 30px;
   margin: 0;
-  padding: 3px 3px 3px 29px;
+  padding: 19px 78px 19px 29px;
   background: #ffffff;
   border: 1px solid #316dc2;
   border-radius: 30px;
@@ -3328,17 +3348,24 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: relative;
 }
 @media (max-width: 767px) {
   .primary-link {
     gap: 20px;
-    padding: 3px 3px 3px 19px;
+    padding: 14px 58px 14px 19px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
   }
 }
 .primary-link span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3456,7 +3483,6 @@ button,
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
-  width: 392px;
   min-height: 420px;
   margin: 0;
   padding: 20px;
@@ -3570,7 +3596,6 @@ button,
   right: 0;
   width: 100%;
   height: 100%;
-  padding-top: 107%;
   background: rgba(49, 109, 194, 0.2);
   border-radius: 12px;
 }
@@ -3729,7 +3754,6 @@ button,
   background: transparent;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3748,6 +3772,7 @@ button,
 .button:hover:not(:disabled), .button:focus-visible:not(:disabled) {
   background: #ffffff;
   outline: none;
+  cursor: pointer;
 }
 .button:active:not(:disabled) svg {
   stroke: rgba(49, 109, 194, 0.7);
@@ -3808,6 +3833,7 @@ button,
   width: 100vw;
   height: 100vh;
   background: rgba(13, 29, 51, 0.4);
+  overflow: auto;
 }
 .navigation.is-open .navigation__button-icon:last-child {
   display: block;
@@ -5292,7 +5318,7 @@ button,
 }
 @media (max-width: 767px) {
   .faq__inner-item-button.active {
-    padding: 20px 14px 18px;
+    padding: 20px 14px 14px;
   }
 }
 .faq__inner-item-button.active .faq__inner-item-icon-wrapper {
@@ -5419,7 +5445,7 @@ button,
 }
 @media (max-width: 1199px) {
   .comments {
-    padding: 48px 45px 101px;
+    padding: 48px 45px 124px;
   }
 }
 @media (max-width: 767px) {

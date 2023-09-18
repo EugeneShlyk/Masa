@@ -27,6 +27,13 @@
 
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
+
+    &:hover:not(:disabled),
+    &:focus-within:not(:disabled) {
+      span {
+        color: $color-charcoal;
+      }
+    }
   }
 
   &__button {
@@ -264,8 +271,13 @@
 .custom-select--secondary {
   margin-bottom: 21px;
 
+  &:focus-within > span {
+    color: $color-default-white;
+  }
+
   @include vp-767 {
     margin-top: 3px;
+    margin-bottom: 24px;
   }
 
   span {
@@ -287,8 +299,12 @@
   }
 
   &:hover:not(:disabled),
-  &:focus-visible:not(:disabled) {
+  &:focus:not(:disabled) {
     border: 1px solid $color-default-white;
+
+    .custom-select__text {
+      color: $color-default-white;
+    }
   }
 
   .custom-select__icon {
@@ -298,4 +314,9 @@
   span {
     margin: 0;
   }
+}
+
+.custom-select--secondary > span:hover {
+  color: $color-default-white;
+  cursor: text;
 }

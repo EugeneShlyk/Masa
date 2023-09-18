@@ -1367,7 +1367,6 @@
                 <button
                   class="custom-select__button custom-select__button--secondary"
                   type="button"
-                  aria-label="Выберите один из предложенных городов"
                 >
                   <span class="custom-select__text">город</span>
                   <span class="custom-select__icon"></span>
@@ -1385,7 +1384,7 @@
                 data-on-input-validate="data-on-input-validate"
                 data-required="data-required"
               >
-                <label class="custom-toggle__label">
+                <label class="custom-toggle__label custom-toggle__label--secondary">
                   <input
                     type="checkbox"
                     name="checkbox"
@@ -1399,10 +1398,10 @@
                   >
                     <use href="img/sprite.svg#checkbox-icon"></use>
                   </svg>
+                  <div class="custom-toggle__text-wrapper">
+                    <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
+                  </div>
                 </label>
-                <div class="custom-toggle__text-wrapper">
-                  <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
-                </div>
               </div>
               <div class="form__button-wrapper">
                 <button class="form__button" type="submit" aria-label="отправить заявку для обратной связи">
@@ -1547,6 +1546,7 @@
                 name="user-name"
                 id="user-name"
                 aria-label="поле ввода вашего имени"
+                autofocus
               >
             </label>
           </div>
@@ -1616,8 +1616,8 @@
               >
                 <use href="img/sprite.svg#checkbox-icon"></use>
               </svg>
+              <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
             </label>
-            <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
           </div>
           <div class="modal__button-wrapper">
             <button class="modal__button primary-link" type="submit" aria-label="отправить заявку для связи с вами">

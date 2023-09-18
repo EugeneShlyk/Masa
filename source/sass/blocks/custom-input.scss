@@ -18,6 +18,15 @@
     width: 100%;
     margin: 0 0 16px;
 
+    &:hover:not(:disabled),
+    &:focus-within:not(:disabled) {
+
+      span {
+        color: $color-charcoal;
+      }
+    }
+
+
     @media screen and (max-width: 767px) {
       align-items: flex-start;
       flex-direction: column;
@@ -126,7 +135,6 @@
       background: $color-cerulean-blue;
 
       &:hover:not(:disabled) {
-        cursor: pointer;
         outline: none;
         border: 1px solid $color-default-white;
       }
