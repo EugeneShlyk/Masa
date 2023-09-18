@@ -11,8 +11,8 @@ export const initHeroSlider = () =>
       el: '.hero__box-button',
       clickable: true,
     },
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
     simulateTouch: false,
   });

@@ -15,13 +15,9 @@ export const initCommentsSlider = () =>
     },
     simulateTouch: false,
     breakpoints: {
-      1280: {
-        slidesPerView: 2,
-        spaceBetween: 32,
-      },
       1200: {
         slidesPerView: 2,
-        spaceBetween: 6,
+        spaceBetween: 32,
       },
       768: {
         slidesPerView: 'auto',
